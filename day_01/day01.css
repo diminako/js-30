@@ -1,0 +1,36 @@
+* {
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container_key {
+
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.key {
+
+}
+
+
+button{
+    background-color: grey;
+    transform: scale(120%);
+    display: flex;
+    border: 1px solid black;
+}
+
+button:hover {
+        transform: scale(2);
+        border: 3px solid yellow;
+    }
