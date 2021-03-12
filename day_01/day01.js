@@ -7,10 +7,6 @@ const ride = function(){document.getElementById("06").play()}
 const snare = function(){document.getElementById("07").play()}
 const tink = function(){document.getElementById("08").play()}
 
-const key = document.querySelectorAll(".key")
-
-const keyArr = Array.prototype.slice.call(key)
-
 window.addEventListener("keydown", (e) => {
     switch (e.key) {
         case "a":
