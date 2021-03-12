@@ -14,35 +14,27 @@ const keyArr = Array.prototype.slice.call(key)
 window.addEventListener("keydown", (e) => {
     switch (e.key) {
         case "a":
-            // console.log("a");
             boom();
             break;
         case "s":
-            // console.log("s");
             clap();
             break;
         case "d":
-            // console.log("d");
             hiHat();
             break;
         case "f":
-            // console.log("f");
             kick();
             break;
         case "g":
-            // console.log("g");
             openHat();
             break;
         case "h":
-            // console.log("h");
             ride();
             break;
         case "j":
-            // console.log("j");
             snare();
             break;
         case "k":
-            // console.log("k");
             tink();
             break;
     }
