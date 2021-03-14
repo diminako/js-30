@@ -1,0 +1,43 @@
+body {
+    background-image: url('./assets/wutangconcert.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+    color: beige;
+    background-color: black;
+}
+
+button {
+    background-color: grey;
+    transform: scale(120%);
+    display: flex;
+    border: 3px solid black;
+}
+
+button:hover {
+        transform: scale(2);
+        border: 3px solid yellow;
+    }
+    
+.pressed {
+    transform: scale(2);
+    border: 3px solid yellow;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container_key {
+
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}

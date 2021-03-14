@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./day01.css">
+
+    <title>Day 01 JavaScript Drum Kit</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the JavaScript Drum Kit</h1>
+    </header>
+
+    <div class="container">
+        <div class="container_key">
+            <div data-key-container="a" ><button data-key-btn="a">A</button></div>
+            <div data-key-container="s" ><button data-key-btn="s">S</button></div>
+            <div data-key-container="d" ><button data-key-btn="d">D</button></div>
+            <div data-key-container="f" ><button data-key-btn="f">F</button></div>
+            <div data-key-container="g" ><button data-key-btn="g">G</button></div>
+            <div data-key-container="h" ><button data-key-btn="h">H</button></div>
+            <div data-key-container="j" ><button data-key-btn="j">J</button></div>
+            <div data-key-container="k" ><button data-key-btn="k">K</button></div>
+        </div>
+    </div>
+    
+    <audio data-key-code="a" src="./assets/boom.wav"></audio>
+    <audio data-key-code="s" src="./assets/clap.wav"></audio>
+    <audio data-key-code="d" src="./assets/hiHat.wav"></audio>
+    <audio data-key-code="f" src="./assets/kick.wav"></audio>
+    <audio data-key-code="g" src="./assets/openHat.wav"></audio>
+    <audio data-key-code="h" src="./assets/ride.wav"></audio>
+    <audio data-key-code="j" src="./assets/snare.wav"></audio>
+    <audio data-key-code="k" src="./assets/tink.wav"></audio>
+
+
+    <script src="./day01.js"></script>
+</body>
+</html>
