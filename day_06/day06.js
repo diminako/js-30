@@ -17,8 +17,15 @@ fetch(endpoint)
 //  Nifty Regexp to add commas to long numbers
 const numberWithCommas = (e) => e.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 
+//  Searches through the searched array and finds matches with the input of the search.
+const findMatches = (input, searched) => {
+    return searched.filter(place => {
+        const regex = new RegExp(input, 'gi');
+        return place.city.match(regex) || place.state.match(regex);
+    })
+}
 
-// 
+//  handles the displaying of the matching search items.
 const displayMatches = () => {
     const matchArray = findMatches(searchInput.value, searched)
     const html = matchArray.map(place => {
@@ -36,12 +43,7 @@ const displayMatches = () => {
 }
 
 // 
-const findMatches = (input, searched) => {
-    return searched.filter(place => {
-        const regex = new RegExp(input, 'gi');
-        return place.city.match(regex) || place.state.match(regex);
-    })
-}
+
 
 // Event listeners when a key is lifted up or the search input area is changed.
 searchInput.addEventListener('change', displayMatches);
